@@ -321,6 +321,65 @@ section {
   background: rgba(18, 21, 35, 0.55);
 }
 
+.resume {
+  background: rgba(18, 21, 35, 0.35);
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.resume-block {
+  background: var(--surface);
+  padding: 22px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--card-shadow);
+  display: grid;
+  gap: 14px;
+}
+
+.resume-block h3 {
+  font-size: 1.1rem;
+}
+
+.resume-item {
+  display: grid;
+  gap: 8px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.resume-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.resume-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.resume-meta span,
+.muted {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.resume-list {
+  display: grid;
+  gap: 8px;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.resume-list li {
+  list-style: disc;
+}
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -371,6 +430,79 @@ section {
   box-shadow: var(--card-shadow);
   display: grid;
   gap: 18px;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.ai-assistant {
+  background: rgba(18, 21, 35, 0.45);
+}
+
+.ai-card {
+  background: var(--surface);
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--card-shadow);
+  display: grid;
+  gap: 18px;
+}
+
+.ai-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ai-badge {
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.ai-messages {
+  display: grid;
+  gap: 10px;
+}
+
+.ai-msg {
+  padding: 12px 14px;
+  border-radius: 14px;
+  max-width: 560px;
+  font-size: 0.95rem;
+}
+
+.ai-msg.bot {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.ai-msg.user {
+  background: rgba(124, 92, 255, 0.18);
+  color: var(--text);
+  justify-self: end;
+}
+
+.ai-input {
+  display: flex;
+  gap: 12px;
+}
+
+.ai-input input {
+  flex: 1;
+  background: var(--surface-2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 14px;
+  border-radius: 12px;
+  color: var(--text);
 }
 
 .contact-form {
